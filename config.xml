@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget xmlns= "http://www.w3.org/ns/widgets"
+        xmlns:gap= "http://phonegap.com/ns/1.0"
+        id= "com.cgomez.urnani"
+        version= "0.2.7">
+
+    <name>URNANI</name>
+    <description>Nanni</description>
+    <author email="00.13.zkr@gmail.com" href="http://cgomez.work/">
+        Cesar Gomez
+    </author>
+    <icon src="icon.png" />
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name='phonegap-version' value="3.7.0" />
+    <preference name="Fullscreen"               value="false" />
+    <preference name="DisallowOverscroll"       value="true"/> 
+    <preference name="Orientation"              value="portrait" />
+    <preference name="HideKeyboardFormAccessoryBar" value="false"/>
+    <preference name="stay-in-webview"          value="true" />
+    <preference name="ios-statusbarstyle"       value="black-opaque" />        
+    
+    <gap:plugin name="org.apache.cordova.inappbrowser"/>
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.vibration" /> 
+</widget>
