@@ -3421,7 +3421,7 @@ body {
   background: #d4a6a9 url(../img/bg.jpg) no-repeat fixed;
   background-size: cover;
   color: #fff;
-  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
+  font-family: 'Cagliostro', sans-serif !important;
   margin: 0;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -3542,4 +3542,132 @@ header img {
   color: #fff;
   left: -23px;
   position: absolute;
+}
+#content-nannis {
+  background: rgba(0, 0, 0, 0.3);
+  overflow-x: scroll;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+#content-nannis .nanni {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 0px 1px #fff;
+}
+#content-nannis .nanni .avatar {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: table;
+  margin: 0 auto;
+  transition: all .2s linear;
+}
+#content-nannis .nanni .avatar img {
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+}
+#content-nannis .nanni .avatar p {
+  position: relative;
+  background: rgba(96, 125, 139, 0.67);
+  border-radius: 50%;
+  display: table-cell;
+  text-shadow: 0px 1px 0px #000;
+  vertical-align: middle;
+}
+#content-nannis .nanni .avatar p span {
+  display: block;
+}
+#content-nannis .nanni .avatar:hover p {
+  background: transparent;
+}
+#content-nannis .nanni .stars {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#content-nannis .nanni .stars li {
+  display: inline-block;
+}
+#content-nannis .nanni .stars li i {
+  color: #aaa;
+}
+#content-nannis .nanni .stars li i.active {
+  color: yellow;
+}
+#content-nannis .nanni .detalles img {
+  width: 150px;
+}
+#conocela {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px 5px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+#conocela .cursos {
+  margin: 7px 0px;
+}
+#conocela .cursos img {
+  width: 120px;
+  display: inline-block;
+}
+#conocela .nanni {
+  border-radius: 5px;
+}
+#conocela .morado,
+#conocela .amarillo {
+  position: relative;
+}
+#conocela .morado {
+  color: #fff;
+  background: #6f25b7;
+  border-radius: 50px 0 0 50px;
+  display: block;
+  padding: 5px 0px;
+  position: relative;
+  right: -18px;
+}
+#conocela .morado::before {
+  content: "";
+  width: 0;
+  border: 7px solid #6F25B7;
+  position: absolute;
+  z-index: 999;
+  top: -14px;
+  right: 0px;
+  display: block;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+}
+#conocela .amarillo {
+  color: #795548;
+  background: #ffd479;
+  border-radius: 0px 50px 50px 0px;
+  display: block;
+  left: -18px;
+  padding: 5px 0px;
+  position: relative;
+}
+#conocela .amarillo::before {
+  content: "";
+  width: 0;
+  border: 7px solid #ffd479;
+  position: absolute;
+  z-index: 999;
+  top: -14px;
+  left: 0px;
+  display: block;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+}
+#conocela .rosa {
+  background: #d96599;
+  border-radius: 50%;
+  padding: 55px;
+  margin: 15px 0px;
 }

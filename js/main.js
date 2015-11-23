@@ -11,6 +11,9 @@ function onDeviceReady() {
     };
 }
 $(function(){
+	$(document).on("click","#logo", function(){
+		goTo("index");
+	});
 	$(document).on("click", ".nav-xhr", function(e){
         goTo($(this).data("href"));        
     });
@@ -38,6 +41,13 @@ function nannisIndex(){
 	calendarSet();
 	calendarScale();
 }
+function nannis(){}
+function nannisDisponibles(){
+	$(".nanni").on("click", function(){
+		goTo("nannisConocela");
+	});
+}
+function nannisConocela(){}
 function goTo(view){
     $("#app").hide();
     var url = "views/"+view+".html";
