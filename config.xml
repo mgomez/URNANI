@@ -11,7 +11,8 @@
     </author>
     <icon src="icon.png" />
     <content src="index.html" />
-    <access origin="*"/>
+    <access origin="*"/> <!-- allow all pages, use for development -->
+    <access origin="*.pushwoosh.com"/> <!-- allow pushwoosh service -->
     <preference name="phonegap-version" value="cli-5.2.0" />
     <preference name="Fullscreen"               value="false" />
     <preference name="DisallowOverscroll"       value="true"/> 
