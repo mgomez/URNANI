@@ -27,4 +27,5 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.vibration" /> 
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
+    <plugin name="org.apache.cordova.device" spec="0.3.0" source="pgb" />
 </widget>
