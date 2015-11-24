@@ -2,7 +2,7 @@
 <widget xmlns= "http://www.w3.org/ns/widgets"
         xmlns:gap= "http://phonegap.com/ns/1.0"
         id= "com.cgomez.urnani"
-        version= "0.5.7">
+        version= "0.5.8">
 
     <name>URNANI</name>
     <description>Nanni</description>
@@ -11,8 +11,7 @@
     </author>
     <icon src="icon.png" />
     <content src="index.html" />
-    <access origin="*"/> <!-- allow all pages, use for development -->
-    <access origin="*.pushwoosh.com"/> <!-- allow pushwoosh service -->
+    <access origin="*"/>
     <preference name="phonegap-version" value="cli-5.2.0" />
     <preference name="Fullscreen"               value="false" />
     <preference name="DisallowOverscroll"       value="true"/> 
