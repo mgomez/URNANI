@@ -11,17 +11,20 @@
     </author>
     <icon src="icon.png" />
     <content src="index.html" />
-    <access origin="*" />
+    <access origin="*"/> <!-- allow all pages, use for development -->
+    <access origin="*.pushwoosh.com"/> <!-- allow pushwoosh service -->
     <preference name='phonegap-version' value="3.7.0" />
     <preference name="Fullscreen"               value="false" />
     <preference name="DisallowOverscroll"       value="true"/> 
     <preference name="Orientation"              value="portrait" />
     <preference name="HideKeyboardFormAccessoryBar" value="false"/>
     <preference name="stay-in-webview"          value="true" />
-    <preference name="ios-statusbarstyle"       value="black-opaque" />        
+    <preference name="ios-statusbarstyle"       value="black-opaque" />  
+    <preference name="android-build-tool" value="gradle" />      
     
     <gap:plugin name="org.apache.cordova.inappbrowser"/>
     <gap:plugin name="org.apache.cordova.dialogs" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.vibration" /> 
+    <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
 </widget>
