@@ -3445,6 +3445,24 @@ body {
   -o-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
+i {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceIn;
+  -moz-animation-name: bounceIn;
+  -o-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
 .section {
   color: #fff;
 }
@@ -3459,8 +3477,8 @@ input {
   border: 1px solid #fff;
 }
 header {
-  height: 100px;
-  line-height: 100px;
+  height: 70px;
+  line-height: 70px;
   text-align: right;
 }
 header img {
@@ -3501,7 +3519,11 @@ header img {
   display: inline-block;
 }
 #index {
-  background: #307faf;
+  background: #1e5799;
+  background: -moz-linear-gradient(45deg, #1e5799 0%, #2989d8 50%, #307faf 100%);
+  background: -webkit-linear-gradient(45deg, #1e5799 0%, #2989d8 50%, #307faf 100%);
+  background: linear-gradient(45deg, #1e5799 0%, #2989d8 50%, #307faf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#307faf', GradientType=1);
   min-height: 100vh;
   text-align: center;
   color: #fff;
@@ -3515,6 +3537,7 @@ header img {
   display: inline-block;
   vertical-align: middle;
   font-size: 16px;
+  box-shadow: 0px 8px 1px rgba(0, 0, 0, 0.1);
 }
 #index .content-select {
   display: inline-block;
@@ -3555,6 +3578,7 @@ header img {
   width: 200px;
   border: 1px dashed rgba(255, 255, 255, 0.4);
   box-shadow: 0px 0px 0px 1px #fff;
+  padding: 15px 0;
 }
 #content-nannis .nanni .avatar {
   position: relative;
@@ -3573,7 +3597,7 @@ header img {
 }
 #content-nannis .nanni .avatar p {
   position: relative;
-  background: rgba(96, 125, 139, 0.67);
+  background: rgba(0, 0, 0, 0.51);
   border-radius: 50%;
   display: table-cell;
   text-shadow: 0px 1px 0px #000;
@@ -3600,7 +3624,24 @@ header img {
   color: yellow;
 }
 #content-nannis .nanni .detalles img {
-  width: 150px;
+  width: 100px;
+  margin: 15px 0;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 }
 #conocela {
   background: rgba(0, 0, 0, 0.3);
@@ -3670,4 +3711,21 @@ header img {
   border-radius: 50%;
   padding: 55px;
   margin: 15px 0px;
+  color: #fff;
+}
+#areasInteresList li {
+  color: #333;
+  overflow: auto;
+}
+#areasInteresList li a {
+  float: right;
+}
+#areasInteresList li a i {
+  color: #5215ad;
+}
+.modal {
+  color: #555;
+}
+.rosa {
+  color: #E91E63;
 }

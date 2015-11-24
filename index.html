@@ -15,6 +15,51 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
+        <!-- Modal -->
+        <div class="modal fade" id="nannisCursos1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Cursos</h4>
+              </div>
+              <div class="modal-body">
+                <p class="rosa">Se otorgara un curso de capacitacion obligatorio *gratuito, favor de indicar la fecha de disponibilidad</p>
+                <form action="" class="form-inline">
+                    <div class="form-group">
+                        <label>Fecha</label>
+                        <input type="date" class="datepicker">
+                    </div>                    
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="nannisCursos2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Cursos</h4>
+              </div>
+              <div class="modal-body">
+                <p class="rosa">Se otorgara un curso de capacitacion obligatorio *gratuito de apoyo educativo, favor de indicar la fecha de disponibilidad</p>
+                <form action="" class="form-inline">
+                    <div class="form-group">
+                        <label>Fecha</label>
+                        <input type="date" class="datepicker">
+                    </div>                    
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div id="app">
             <div id="index" class="page">
                 <div>
@@ -24,10 +69,10 @@
                 </div>
                 <div id="select">
                     <div class="content-select">
-                        <div id="nannis" class="select nav-xhr" data-href="nannis-login"><span>Nannis</span></div>
+                        <div id="nannis" class="select nav-xhr" data-href="nannisLogin"><span>Nannis</span></div>
                     </div>
                     <div class="content-select">
-                        <div id="padres" class="select nav-xhr" data-href="padres-login"></div>
+                        <div id="padres" class="select nav-xhr" data-href="padresLogin"></div>
                     </div>
                 </div>
             </div>
