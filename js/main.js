@@ -54,6 +54,9 @@ function onDeviceReady() {
 	}
 }
 $(function(){
+	$("#menu, #content-menu li>a").on("click", ()=>{
+		$("#content-menu").toggleClass('active');
+	});
 	$(document).on("click","#logo", function(){
 		goTo("index");
 	});
@@ -92,6 +95,7 @@ function padresDisponibles(){
 }
 function padresConocela(){}
 function goTo(view){
+	console.debug(view);
     $("#app").hide();
     var url = "views/"+view+".html";
     $.get(url, function(html){

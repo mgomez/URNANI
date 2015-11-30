@@ -10,12 +10,19 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/calendar.min.css">
-        <!--<link href='https://fonts.googleapis.com/css?family=Cagliostro' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-        <!-- Modal -->
+        <div class="modal fade" id="Ubicacion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="img/map.png" alt="" style="width:80vw;border:5px solid #fff"/>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="modal fade" id="nannisCursos1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -59,7 +66,21 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>        
+        <div id="header" class="">
+            <div id="content-menu">
+                <ul>
+                    <li><a data-href="padresIndex" class="nav-xhr" href="#">Agenda</a></li>
+                    <li><a data-href="padresDisponibles" class="nav-xhr" href="#">Nani</a></li>
+                    <li><a data-href="index" class="nav-xhr" href="#">Cursos</a></li>
+                    <li><a data-href="index" class="nav-xhr" href="#">Proceso</a></li>
+                    <li><a data-href="index" class="nav-xhr" href="#">Completar Registro</a></li>
+                    <li><a data-href="padresPago" class="nav-xhr" href="#">Pago</a></li>
+                    <li><a data-href="index" class="nav-xhr" href="#">Cerrar Sesison</a></li>
+                </ul>
+            </div>            
+        </div><!-- /header -->
+        <div id="menu"><i class="fa fa-bars"></i></div>
         <div id="app">
             <div id="index" class="page">
                 <div>
@@ -69,15 +90,18 @@
                 </div>
                 <div id="select">
                     <div class="content-select">
-                        <div id="nannis" class="select nav-xhr" data-href="nannisLogin"><span>Nannis</span></div>
+                        <div id="nannis" class="select nav-xhr" data-href="indexNanni"><span>Nannis</span></div>
                     </div>
                     <div class="content-select">
-                        <div id="padres" class="select nav-xhr" data-href="padresLogin"></div>
+                        <div id="padres" class="select nav-xhr" data-href="indexPadres"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="cordova.js"></script>
+        <footer>
+            <h4>&copy; URNANI 2015</h4>
+        </footer>
+        <!--<script src="cordova.js"></script>-->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/calendar.min.js"></script>
