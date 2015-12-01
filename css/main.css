@@ -3440,8 +3440,7 @@ body {
   height: 100%;
 }
 body {
-  background: #d4a6a9 url(../img/bg.jpg) center;
-  background-size: cover;
+  background: #d4a6a9 url(../img/bg.jpg) center fixed;
   color: #fff;
   font-family: syncopate, Segoe Ui;
   margin: 0;
