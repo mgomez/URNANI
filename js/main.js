@@ -96,6 +96,7 @@ function padresDisponibles(){
 function padresConocela(){}
 function goTo(view){
 	console.debug(view);
+	navigator.vibrate(100);
     $("#app").hide();
     var url = "views/"+view+".html";
     $.get(url, function(html){
