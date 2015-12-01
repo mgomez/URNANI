@@ -3435,8 +3435,12 @@ body {
 * {
   box-sizing: border-box;
 }
+html,
 body {
-  background: #d4a6a9 url(../img/bg.jpg) no-repeat center;
+  height: 100%;
+}
+body {
+  background: #d4a6a9 url(../img/bg.jpg) center;
   background-size: cover;
   color: #fff;
   font-family: syncopate, Segoe Ui;
