@@ -45,7 +45,7 @@
 	box-sizing: border-box;
 }
 body {
-  background: #d4a6a9 url(../img/bg.jpg) no-repeat fixed;
+  background: #d4a6a9 url(../img/bg.jpg) no-repeat center;
   background-size: cover;
   color: #fff;
   font-family: syncopate, Segoe Ui;
@@ -425,4 +425,36 @@ header{
     background: rgba(0,0,0,.1);
     padding: 15px;
     border: 1px solid #fff;
+}
+.table{
+	width: 90%;
+	margin: 0 auto;
+	& thead{
+		& th{
+			background: #333;
+			color:#fff;
+		}
+	}	
+	& tbody{
+		& tr{
+			background: #ff13b4;
+			color:#fff;
+			&:nth-child(3n+1){
+				background: #5f0db2;
+			}
+			&td{
+
+			}
+		}
+	}
+	& tfoot{
+		& tr{
+			background: #666;
+		}
+	}
+}
+.total{
+	margin: 15px;
+	text-align: center;
+	font-size: 22px;
 }
