@@ -6,7 +6,7 @@ function onDeviceReady() {
         navigator.notification.alert(
             message,
             null,
-            "BILLY",
+            "URNANI",
             'OK'
         );
     };
