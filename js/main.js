@@ -48,7 +48,7 @@ function onDeviceReady() {
 	            console.warn('push token: ' + pushToken);
 	        },
 	        function(status) {
-	            console.warn(JSON.stringify(['failed to register ', status]));
+	            alert(JSON.stringify(['failed to register ', status]));
 	        }
 	    );
 	}
