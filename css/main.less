@@ -12,7 +12,7 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: local('Material Icons'), local('MaterialIcons-Regular'), url(../font/MaterialIcons.woff2) format('woff2');
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url('../fonts/MaterialIcons.woff2') format('woff2');
 }
 @font-face {
     font-family: 'syncopate';
@@ -25,6 +25,21 @@
     font-weight: normal;
     font-style: normal;
 
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
 *{
 	box-sizing: border-box;
@@ -49,7 +64,6 @@ body {
 #app{
 	.animated;
 	.fadeInLeft;
-	margin-bottom: 50px;
 }
 footer{
 	text-align: center;
@@ -140,13 +154,18 @@ header{
 		display: inline-block;
 	}
 }
+#menu{
+	& i{
+		font-size: 46px;		
+	}
+}
 #index{
 	background: #1e5799;
 	background: -moz-linear-gradient(45deg,  #1e5799 0%, #2989d8 50%, #307faf 100%);
 	background: -webkit-linear-gradient(45deg,  #1e5799 0%,#2989d8 50%,#307faf 100%);
 	background: linear-gradient(45deg,  #1e5799 0%,#2989d8 50%,#307faf 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#307faf',GradientType=1 );
-	min-height: 100vh;
+	min-height: 94vh;
 	text-align: center;
 	color: #fff;
 	padding-top: 70px;
