@@ -107,28 +107,3 @@ function goTo(view){
         }
     });
 }
-
-
-var Data = {
-    "request": {
-        "application": "30994-56285",
-        "auth": "XyZSngEEfEbRwLoqdBSHA9XBlcSFDXmt570kmDwYgZpAA6TUIhRkQyv8D0JbXgVVmTcPjkBN8buRisZhXtOx",
-        "notifications": [{
-            "send_date": "now", // YYYY-MM-DD HH:mm  OR 'now'
-            "ignore_user_timezone": true, // or false
-            "content": "Hello world!"
-        }]
-    }
-}
-$.ajax({
-	url: 'https://cp.pushwoosh.com/json/1.3/%method%',
-	type: 'POST',
-	dataType: "json",
-	data: JSON.stringify(Data) ,
-})
-.done(function(r) {
-	console.log("success", r);
-})
-.fail(function(err) {
-	console.log("error", err);
-});

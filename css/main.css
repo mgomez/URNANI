@@ -3469,6 +3469,7 @@ body {
   -moz-animation-name: fadeInLeft;
   -o-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
+  min-height: 94vh;
 }
 footer {
   text-align: center;
