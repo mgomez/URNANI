@@ -1,6 +1,10 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
+<<<<<<< HEAD
 	initPushwoosh();
+=======
+    initPushwoosh();
+>>>>>>> origin/master
     window.alert = function(message) {
         navigator.vibrate(100);
         navigator.notification.alert(
