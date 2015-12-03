@@ -1,6 +1,6 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-	//initPushwoosh();
+	initPushwoosh();
     window.alert = function(message) {
         navigator.vibrate(100);
         navigator.notification.alert(
@@ -54,7 +54,7 @@ function onDeviceReady() {
 	}
 }
 $(function(){
-	$("#menu, #content-menu li>a").on("click", ()=>{
+	$("#menu, #content-menu li>a").on("click", function(){
 		$("#content-menu").toggleClass('active');
 	});
 	$(document).on("click","#logo", function(){
@@ -96,7 +96,7 @@ function padresDisponibles(){
 function padresConocela(){}
 function goTo(view){
 	console.debug(view);
-	navigator.vibrate(100);
+	navigator.vibrate(50);
     $("#app").hide();
     var url = "views/"+view+".html";
     $.get(url, function(html){
